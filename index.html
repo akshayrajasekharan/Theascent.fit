@@ -218,6 +218,24 @@
     border-bottom:9px solid transparent;
     margin-left:4px;
   }
+  .mc-video-soon{ flex-direction:column; }
+  .mc-soon-label{ position:relative; z-index:2; text-align:center; }
+  .mc-soon-eyebrow{
+    font-family:'Oswald',sans-serif;
+    font-size:1.5rem;
+    font-weight:600;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--fg);
+    margin-bottom:10px;
+  }
+  .mc-soon-sub{
+    font-family:'Work Sans',sans-serif;
+    font-size:0.95rem;
+    font-weight:300;
+    font-style:italic;
+    color:var(--accent);
+  }
   .mc-covers{ list-style:none; margin-top:26px; }
   .mc-covers li{
     padding:14px 0;
@@ -313,6 +331,11 @@
     font-size:0.92rem;
     margin-top:6px;
   }
+  .bio-motto-author{
+    font-style:normal;
+    color:var(--fg-muted);
+    font-size:0.82rem;
+  }
 
   /* ---------- Community statement band ---------- */
   .statement{
@@ -404,48 +427,53 @@
 
 <div class="rail" id="rail">
   <div class="rail-fill" id="railFill"></div>
-  <div class="rail-node n1" id="node1"><span>BODY</span></div>
-  <div class="rail-node n2" id="node2"><span>MIND</span></div>
-  <div class="rail-node n3" id="node3"><span>BEING</span></div>
+  <div class="rail-node n1" id="node1"><span>DISCIPLINE</span></div>
+  <div class="rail-node n2" id="node2"><span>DIRECTION</span></div>
+  <div class="rail-node n3" id="node3"><span>DEPTH</span></div>
 </div>
 
 <nav>
   <div class="logo">THE ASCENT<span>.</span></div>
-  <a href="#masterclass" class="nav-cta">Watch the Trailer</a>
+  <a href="#masterclass" class="nav-cta">Coming Soon</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero wrap" id="hero">
-  <div class="eyebrow">Now Playing — The Trailer</div>
+  <div class="eyebrow">Coming Soon</div>
   <h1>Train the body.<br>Free what's <em>underneath</em>.</h1>
   <p class="lede">A short film on what physical discipline actually rewires in the mind — and why most people are building it backwards. The full masterclass is coming soon.</p>
-  <a href="#masterclass" class="btn-primary">Watch the Trailer →</a>
+  <a href="#masterclass" class="btn-primary">Watch This Space →</a>
   <div class="hero-stats">
     <div><b>50</b><span>Seats per cohort</span></div>
     <div><b>12</b><span>Weeks, group-based</span></div>
-    <div><b>3</b><span>Stages — Body, Mind, Being</span></div>
+    <div><b>3</b><span>Stages — Discipline, Direction, Depth</span></div>
   </div>
 </section>
 
-<!-- MASTERCLASS / BODY -->
+<!-- MASTERCLASS / DISCIPLINE -->
 <section id="masterclass" class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">Stage One — Body</div>
+    <div class="eyebrow">Stage One — Discipline</div>
     <h2>The Discipline Blueprint</h2>
-    <p>What physical training actually rewires in the mind. Watch the trailer now — the full masterclass is coming soon, and you'll be first to know.</p>
+    <p>What physical training actually rewires in the mind. The trailer is coming — be the first to see it, and the full masterclass, the moment they're live.</p>
   </div>
   <div class="mc-grid">
     <div>
-      <div class="mc-video"><div class="play-btn"></div></div>
+      <div class="mc-video mc-video-soon">
+        <div class="mc-soon-label">
+          <div class="mc-soon-eyebrow">Coming Soon</div>
+          <div class="mc-soon-sub">Watch this space</div>
+        </div>
+      </div>
       <ul class="mc-covers">
         <li>Why motivation was never built to last — and what actually replaces it</li>
         <li>The physiological reason physical discipline transfers to every other part of life</li>
-        <li>Where most people misread the Body → Mind → Being sequence, and build it backwards</li>
+        <li>Where most people misread the Discipline → Direction → Depth sequence, and build it backwards</li>
       </ul>
     </div>
     <div class="form-card">
       <h3>Get early access</h3>
-      <p>Watch the trailer now. Be the first to get the full masterclass the moment it drops.</p>
+      <p>Be the first to get the trailer and the full masterclass the moment they drop.</p>
       <form id="masterclassForm" action="https://formspree.io/f/mvkpyokn" method="POST">
         <div class="field"><label>Full name</label><input type="text" name="name" required></div>
         <div class="field"><label>Email</label><input type="email" name="email" required></div>
@@ -458,10 +486,10 @@
   </div>
 </section>
 
-<!-- WHY THIS WORKS / MIND -->
+<!-- WHY THIS WORKS / DIRECTION -->
 <section id="approach" class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">Stage Two — Mind</div>
+    <div class="eyebrow">Stage Two — Direction</div>
     <h2>Why this sequence, and not the other way around</h2>
     <p>Most personal development starts with mindset and hopes the body follows. This works in reverse — because discipline proven physically is faster to build and harder to talk yourself out of.</p>
   </div>
@@ -490,7 +518,7 @@
       <p>This framework comes from twelve years spent living inside a disciplined, ashram-based way of life — a routine built entirely around training the body and the mind together — combined with years of hands-on work in fitness with people in my own community. It's not theory. It's what I watched work, repeatedly, translated into a structure other people can actually follow.</p>
       <div class="bio-sign">
         <div class="bio-name">Akshay Rajasekharan</div>
-        <div class="bio-motto">"In wildness lies the preservation of the world."</div>
+        <div class="bio-motto">"In wildness lies the preservation of the world." <span class="bio-motto-author">— Henry David Thoreau</span></div>
       </div>
     </div>
   </div>
@@ -503,17 +531,17 @@
   </div>
 </section>
 
-<!-- PROGRAM / BEING -->
+<!-- PROGRAM / DEPTH -->
 <section id="program" class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">Stage Three — Being</div>
+    <div class="eyebrow">Stage Three — Depth</div>
     <h2>The 12-week program</h2>
     <p>For the people who finish the masterclass and want the full arc — not a single session, a structured 12 weeks.</p>
   </div>
   <div class="program-card">
     <div>
       <div class="eyebrow">Cohort-based · Group only</div>
-      <h3>Body → Mind → Being</h3>
+      <h3>Discipline → Direction → Depth</h3>
       <ul class="program-list">
         <li>12 weeks, entirely group-based — no individual sessions in this phase</li>
         <li>Structured progression through all three stages, together with your cohort</li>
@@ -533,9 +561,9 @@
 <!-- APPLICATION -->
 <section id="apply" class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">Application</div>
+    <div class="eyebrow">Coming Soon</div>
     <h2>Apply for the next cohort</h2>
-    <p>A short form, not a purchase. If it's a fit, you'll be invited to a live group orientation call where enrollment opens.</p>
+    <p>Applications aren't open yet — this is where you get on the list first. A short form, not a purchase. The moment applications formally open, you'll be the first to hear, before it's announced anywhere else.</p>
   </div>
   <form class="apply-form" id="applicationForm" action="https://formspree.io/f/mrpzdgpn" method="POST">
     <div class="row2">
@@ -550,19 +578,12 @@
       <label>What's making you look at this now?</label>
       <textarea name="motivation" placeholder="A couple of sentences is plenty."></textarea>
     </div>
-    <div class="field">
-      <label>Have you watched the masterclass yet?</label>
-      <select name="watched_masterclass">
-        <option>Yes, I watched it</option>
-        <option>Not yet</option>
-      </select>
-    </div>
-    <input type="hidden" name="form_type" value="Cohort Application">
+    <input type="hidden" name="form_type" value="Cohort Waitlist">
     <div class="consent">
       <input type="checkbox" required id="adult">
       <label for="adult">I confirm I am 18 or older and understand this program is not therapy or clinical mental health support.</label>
     </div>
-    <button class="btn-primary" type="submit">Submit Application</button>
+    <button class="btn-primary" type="submit">Notify Me When It Opens</button>
   </form>
 </section>
 
