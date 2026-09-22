@@ -161,6 +161,43 @@
 
   /* program */
   .program-card{background:linear-gradient(145deg,rgba(29,48,40,.9),rgba(9,18,15,.95));border:1px solid var(--line-strong);padding:56px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;box-shadow:var(--shadow);position:relative;overflow:hidden}.program-card::after{content:'III';position:absolute;right:22px;top:-25px;font-family:var(--display);font-size:150px;color:rgba(197,166,106,.035);letter-spacing:.08em}.program-card h3{font-size:1.72rem;margin:12px 0 14px}.program-list{list-style:none;margin-top:22px;display:grid;gap:11px}.program-list li{font-size:.91rem;color:var(--muted);display:flex;gap:11px}.program-list li::before{content:'◇';color:var(--gold);font-size:.72rem;margin-top:2px}.program-meta{display:flex;gap:34px;margin-top:32px;flex-wrap:wrap}.program-meta div b{display:block;font-family:var(--display);color:var(--gold-light);font-size:1.18rem}.program-meta div span{font-size:.71rem;color:var(--muted)}
+
+  /* ---------- Curriculum section ---------- */
+  .curriculum-stage{ margin-bottom:64px; }
+  .curriculum-stage:last-child{ margin-bottom:0; }
+  .curriculum-stage-head{
+    display:flex; align-items:baseline; gap:18px; flex-wrap:wrap;
+    margin-bottom:26px;
+    padding-bottom:16px;
+    border-bottom:1px solid var(--line);
+  }
+  .curriculum-stage-head h3{
+    font-size:1.15rem; text-transform:none; color:var(--fg);
+  }
+  .curriculum-stage-head .eyebrow{ font-size:0.72rem; }
+  .curriculum-weeks{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:4px;
+    overflow:hidden;
+  }
+  @media(max-width:700px){ .curriculum-weeks{grid-template-columns:1fr;} }
+  .week-card{ background:var(--bg); padding:26px 28px; }
+  .week-card .wk-num{
+    font-family:var(--display); font-size:0.72rem; letter-spacing:0.14em;
+    color:var(--gold); margin-bottom:8px; text-transform:uppercase;
+  }
+  .week-card h4{
+    font-family:var(--display); font-size:1.02rem; text-transform:none;
+    font-weight:600; margin-bottom:8px; color:var(--fg);
+  }
+  .week-card p{ color:var(--muted); font-size:0.9rem; }
+  .curriculum-note{
+    margin-top:44px; padding-top:32px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:0.96rem; max-width:64ch;
+  }
+  .curriculum-note b{ color:var(--fg); font-weight:600; }
   .apply-form{max-width:660px;padding:50px 44px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.consent{display:flex;gap:10px;align-items:flex-start;font-size:.79rem;color:var(--muted);margin:20px 0 26px}.consent input{margin-top:4px;accent-color:var(--gold)}
 
   footer{border-top:1px solid var(--line);padding:54px 0 38px}.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;align-items:center}.foot-links{display:flex;gap:26px;font-size:.8rem;color:var(--muted)}.foot-links a:hover{color:var(--gold-light)}.foot-fine{font-size:.72rem;color:#6e7972;margin-top:24px;max-width:700px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
@@ -395,6 +432,123 @@
   </div>
 </section>
 
+<!-- CURRICULUM -->
+<section id="curriculum" class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Week by Week</div>
+    <h2>What you actually do, every week</h2>
+    <p>Not a syllabus you read once and forget. Every week gives you something to test, something to keep, and someone to answer to.</p>
+  </div>
+
+  <div class="curriculum-stage">
+    <div class="curriculum-stage-head">
+      <div class="eyebrow">Weeks 1–4</div>
+      <h3>Body — Discipline</h3>
+    </div>
+    <div class="curriculum-weeks">
+      <div class="week-card">
+        <div class="wk-num">Week 01</div>
+        <h4>Baseline</h4>
+        <p>Measure where you actually are, honestly, before anything changes.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 02</div>
+        <h4>Environment Design</h4>
+        <p>Rebuild your surroundings so the next rep is the easy option, not the hard one.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 03</div>
+        <h4>The Dip</h4>
+        <p>Train through the week motivation runs out, and see what's on the other side.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 04</div>
+        <h4>Proof of Capability</h4>
+        <p>One number you can't argue with. Your first real mark.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="curriculum-stage">
+    <div class="curriculum-stage-head">
+      <div class="eyebrow">Weeks 5–8</div>
+      <h3>Mind — Direction</h3>
+    </div>
+    <div class="curriculum-weeks">
+      <div class="week-card">
+        <div class="wk-num">Week 05</div>
+        <h4>Identity Shift</h4>
+        <p>Act like the person you're building, before you feel like them.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 06</div>
+        <h4>The 40% Rule</h4>
+        <p>Find out how much further you actually had left, past where you'd normally stop.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 07</div>
+        <h4>The Fallback Structure</h4>
+        <p>Write your recovery plan before you need it, not after.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 08</div>
+        <h4>Direction Audit</h4>
+        <p>Cut what isn't serving where you said you were headed.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="curriculum-stage">
+    <div class="curriculum-stage-head">
+      <div class="eyebrow">Weeks 9–12</div>
+      <h3>Being — Depth</h3>
+    </div>
+    <div class="curriculum-weeks">
+      <div class="week-card">
+        <div class="wk-num">Week 09</div>
+        <h4>Movement With Intention</h4>
+        <p>One session, full attention, no autopilot.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 10</div>
+        <h4>Depth Practice</h4>
+        <p>Something carried the whole week, not just attempted once.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 11</div>
+        <h4>Integration</h4>
+        <p>Retest your Week 4 number. See what's moved, and what that means.</p>
+      </div>
+      <div class="week-card">
+        <div class="wk-num">Week 12</div>
+        <h4>Close</h4>
+        <p>Rewrite your recovery plan with eleven weeks of real evidence behind it. Leave with it.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="curriculum-note"><b>Every week, the same three things:</b> something you test, something you keep, and someone who checks — a cohort member, a partner, or a live session. Nothing here runs on your memory of reading it once.</p>
+</section>
+
+<!-- THE ASK -->
+<section id="ask" class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">What's Asked of You</div>
+    <h2>We built the structure. This part's yours.</h2>
+    <p>The programme carries the framework. It doesn't carry you. Three things are on you, every week, for twelve weeks.</p>
+  </div>
+  <div class="program-card">
+    <div>
+      <ul class="program-list">
+        <li>Show up, including the weeks you don't want to — especially those</li>
+        <li>Do the work honestly. The artifacts are evidence for you, not performance for anyone else</li>
+        <li>Show up for your cohort the way you'd want them to show up for you</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 <!-- FAQ -->
 <section id="faq" class="wrap">
   <div class="sec-head reveal">
@@ -460,6 +614,7 @@
     <div class="foot-links">
       <a href="#masterclass">Masterclass</a>
       <a href="#program">Program</a>
+      <a href="#curriculum">Curriculum</a>
       <a href="#apply">Apply</a>
     </div>
   </div>
