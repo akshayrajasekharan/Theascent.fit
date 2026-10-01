@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-<title>The Ascent | The Discipline Blueprint</title>
-<meta name="description" content="Discipline, Direction, Depth. A 12-week program that starts with your body and ends up changing a lot more than that.">
+<title>Ascent — Move With Intention</title>
+<meta name="description" content="A free masterclass on what physical training actually rewires in the mind — built inside a community, not alone — and the 12-week program behind it.">
 <meta property="og:title" content="The Ascent | The Discipline Blueprint">
 <meta property="og:description" content="Discipline, Direction, Depth. A 12-week program that starts with your body and ends up changing a lot more than that.">
 <meta property="og:image" content="https://theascent.fit/og-image.png">
@@ -116,6 +116,7 @@
 
   /* headings */
   .sec-head{max-width:690px;margin-bottom:62px}.sec-head h2{font-size:clamp(2rem,3.8vw,3.2rem);margin-top:18px}.sec-head p{color:var(--muted);margin-top:19px;font-size:1rem;max-width:58ch}
+  .sec-head p.tagline{ color:var(--gold); font-size:1.1rem; font-weight:500; margin-top:14px; }
 
   /* masterclass */
   .mc-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:62px;align-items:start}
@@ -270,6 +271,30 @@
   .apply-form select:focus{outline:none;border-color:var(--gold)}
   @media(max-width:680px){.summary-box{margin-top:-12px;padding:22px 20px}.faq-item summary{font-size:1rem;padding-right:36px}.faq-item p{padding-right:12px}.pillar .example{font-size:.86rem}}
 
+
+  .bridges-head{ margin-top:64px; padding-top:48px; border-top:1px solid var(--line); }
+  .bridges-head p.lede-sm{ color:var(--muted); font-size:1rem; max-width:60ch; margin-top:10px; }
+  .bridges{
+    display:grid; grid-template-columns:1fr 1fr; gap:22px;
+    margin-top:30px;
+  }
+  @media(max-width:760px){ .bridges{grid-template-columns:1fr;} }
+  .bridge{
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:30px 28px;
+    position:relative;
+  }
+  .bridge::before{
+    content:'';
+    position:absolute; top:28px; left:28px;
+    width:9px; height:9px; border-radius:50%;
+    border:2px solid var(--gold);
+    background:transparent;
+  }
+  .bridge .eyebrow{ font-size:0.68rem; padding-left:22px; }
+  .bridge h3{ font-size:1.08rem; margin:12px 0 10px; text-transform:none; color:var(--fg); }
+  .bridge p{ color:var(--muted); font-size:0.92rem; }
 </style>
 </head>
 <body>
@@ -318,9 +343,10 @@
 <!-- MASTERCLASS / DISCIPLINE -->
 <section id="masterclass" class="wrap">
   <div class="sec-head reveal">
-    <div class="eyebrow">Stage One — Discipline</div>
-    <h2>The Discipline Blueprint</h2>
-    <p>What physical training actually rewires in your mind. The trailer's coming soon, and so is the full masterclass. Get on the list and you'll be first to see both.</p>
+    <div class="eyebrow">Stage One — Body</div>
+    <h2>Move With Intention</h2>
+    <p class="tagline">Discipline in the body becomes clarity in the mind.</p>
+    <p>What physical training actually rewires in the mind — a free masterclass, no pitch, built on movement and backed by a community, not something you work out alone.</p>
   </div>
 
   <div class="summary-box reveal">
@@ -340,6 +366,7 @@
         <li>Why motivation was never built to last, and what actually replaces it</li>
         <li>The physiological reason physical discipline transfers to every other part of life</li>
         <li>Where most people misread the Discipline → Direction → Depth sequence, and build it backwards</li>
+        <li>Why doing this inside a community outlasts doing it alone</li>
       </ul>
     </div>
     <div class="form-card reveal">
@@ -382,6 +409,24 @@
       <h3>It goes quieter from there</h3>
       <p>Once your body and mind are trained together, what's left is a steadier, quieter sense of who you are underneath both. That's the third stage, and I don't wrap it in ceremony or a label.</p>
       <span class="example"><strong>For example:</strong> you stop needing someone to notice the work for it to count. Doing it was always going to be enough.</span>
+    </div>
+  </div>
+
+  <div class="bridges-head">
+    <div class="eyebrow">What Connects Them</div>
+    <h2 style="font-size:clamp(1.6rem,3vw,2.2rem); margin-top:14px;">Discipline, Direction, and Depth aren't a straight line</h2>
+    <p class="lede-sm">Two things actually carry you from one pillar to the next. Without them, the three stay separate, and most people stall right at the join.</p>
+  </div>
+  <div class="bridges">
+    <div class="bridge">
+      <div class="eyebrow">Bridge One — Movement</div>
+      <h3>Carries Discipline into Direction</h3>
+      <p>Discipline alone doesn't produce clarity — movement does. Moving the body with intention is what actually carries a trained discipline into a clearer, more directed mind. It's not a separate step after discipline. It's the mechanism that turns it into direction.</p>
+    </div>
+    <div class="bridge">
+      <div class="eyebrow">Bridge Two — Consistency</div>
+      <h3>Carries Direction into Depth</h3>
+      <p>Direction held for a single day is just a decision. Direction held without needing to be re-decided — week after week, session after session — is what eventually stops being effort and starts being depth.</p>
     </div>
   </div>
 
